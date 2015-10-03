@@ -81,3 +81,30 @@ body {
     border-bottom: 0;
   }
 }
+#sequence {
+  background-color: #00BFFF;
+  height: 550px;
+  text-align: center;
+  padding-top: 280px;
+}
+
+#sequence2 {
+  background-color: #0000FF;
+  text-align: center;
+  padding-top: 42px;
+  height: 300px;
+}
+
+#image {
+    box-shadow:0 0 7px 2px black;
+    min-height: 230px;
+    min-width: 210px;
+}
+
+span.glyphicon-link {
+    font-size: 1.2em;
+}
+
+
+
+

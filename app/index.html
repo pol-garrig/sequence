@@ -21,43 +21,40 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+    <div class="container-fluid">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#/">sequence</a>
-          </div>
-
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
-          </div>
+      <div class="col-md-4"  >
+            <a class="btn btn-large btn-primary" href="#" style="margin:45px;font-size:1.8em;"><i class="glyphicon glyphicon-arrow-left"></i> Return</a>
+      </div>
+      <!-- First row with the sequence -->
+      <!-- <button id="close" class="closing" onClick="javascript:close_clip()"><img src="icons/close.png" /></button>
+      -->
+      <div class="row" id="sequence">
+        <div class="col-md-4"  >
+            <img src="images/rain1.png" id="image" align="right">
+        </div>
+        <div class="col-md-4" >
+            <img src="images/rain2.png" id="image" align="middle">
+        </div>
+        <div class="col-md-4">
+            <img src="images/rain3.png" id="image" align="left">
         </div>
       </div>
-    </div>
 
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
+      <!-- Seconde row with the soufle sequence -->
 
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      <div class="row" id="sequence2">
+        <div class="col-md-4"  >
+            <img src="images/seq1.png" id="image" align="right">
+        </div>
+        <div class="col-md-4" >
+            <img src="images/seq2.png" id="image" align="middle">
+        </div>
+        <div class="col-md-4">
+            <img src="images/seq3.png" id="image" align="left">
+        </div>
       </div>
-    </div>
-
+    </div> <!-- div container -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
