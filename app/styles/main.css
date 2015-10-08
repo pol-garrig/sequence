@@ -105,5 +105,36 @@ html {
   background-color: #0000FF;
 }
 
+#menuDashboard {
+  background-color: #0000FF;
+  padding: 50px;
+  max-height: 305px;
+
+}
+
+#dashboard {
+  background-color: #00BFFF;
+  text-align: center;
+}
+
+#chronos {
+  /*
+    box-shadow:0 0 7px 2px black;
+    max-height: 230px;
+    max-width: 210px;
+    */
+    font-family: fantasy;
+    font-size: 5.0em;
+    color: white;
+}
+
+#quitter {
+    max-height: 230px;
+    max-width: 210px;
+    margin:5px;
+    font-size:2.0em;
+    float:right;
+}
+
 
 

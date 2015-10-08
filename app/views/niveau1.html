@@ -8,11 +8,11 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <!-- endbuild -->
   </head>
 
@@ -21,7 +21,7 @@
 
       <div class="row" >
         <div class="col-md-4"  >
-            <img src="images/rain1.png" id="image" align="right">
+            <img src="../images/rain1.png" id="image" align="right">
         </div>
          <div class="col-md-4"  >
             <!--img src="images/chronos.png" id="chronos" align="center"-->
@@ -29,8 +29,8 @@
             </div>
         </div>
         <div class="col-md-4"  >
-            <img src="images/rain3.png" id="image" align="left">
-              <a class="btn btn-large btn-danger"  onclick="fermerPopup()" id="quitter"> QUITTER </a>
+            <img src="../images/rain3.png" id="image" align="left">
+              <a class="btn btn-large btn-danger" href="#" id="quitter"> QUITTER </a>
         </div>
 
       </div>
@@ -38,7 +38,7 @@
       <div class="row" >
         <div class="btn-group-vertical"  >
           <a class="btn btn-large btn-primary" href="views/niveau0.html" style="margin-top:50px;font-size:3.8em;"> NIVEAU 0 </a>
-          <a class="btn btn-large btn-primary" href="views/niveau1.html" style="margin-top:20px;font-size:3.8em;"> NIVEAU 1 </a>
+          <a class="btn btn-large btn-primary" href="#" style="margin-top:20px;font-size:3.8em;"> NIVEAU 1 </a>
           <a class="btn btn-large btn-primary" href="#" style="margin-top:20px;font-size:3.8em;"> NIVEAU 2 </a>
           <a class="btn btn-large btn-primary" href="#" style="margin-top:20px;font-size:3.8em;"> NIVEAU 3 </a>
         </div>
@@ -75,14 +75,6 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
-        <script>
-            function fermerPopup()
-            {
-              window.open('/', '_self', '');
-              window.close();
-
-            }
-        </script>
         <!-- endbuild -->
 </body>
 </html>

@@ -1,6 +1,7 @@
 <!doctype html>
 <html id="dashboard">
   <head>
+
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -8,45 +9,55 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <!-- endbuild -->
   </head>
+    <body ng-app="sequenceApp">
+        <!--[if lte IE 8]>
+          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
+        <!-- Add your site or application content here -->
+        <div class="container-fluid">
 
-  <div class="container-fluid" id="menuDashboard">
+          <div class="col-md-4"  >
+                <a class="btn btn-large btn-primary" href="/" style="margin:45px;font-size:2.5em;"><i class="glyphicon glyphicon-arrow-left"></i> Retour</a>
 
-      <div class="row" >
-        <div class="col-md-4"  >
-            <img src="images/rain1.png" id="image" align="right">
-        </div>
-         <div class="col-md-4"  >
-            <!--img src="images/chronos.png" id="chronos" align="center"-->
-            <div id="chronos">CHRONOS
+          </div>
+          <!-- First row with the sequence -->
+          <!-- <button id="close" class="closing" onClick="javascript:close_clip()"><img src="icons/close.png" /></button>
+          -->
+          <div class="row" id="sequence">
+            <div class="col-md-4"  >
+                <img src="../images/rain1.png" id="image" align="right">
             </div>
-        </div>
-        <div class="col-md-4"  >
-            <img src="images/rain3.png" id="image" align="left">
-              <a class="btn btn-large btn-danger"  onclick="fermerPopup()" id="quitter"> QUITTER </a>
-        </div>
+            <div class="col-md-4" >
+                <img src="../images/seq2.png" id="image" align="middle">
+            </div>
+            <div class="col-md-4">
+                <img src="../images/seq3.png" id="image" align="left">
+            </div>
+          </div>
 
-      </div>
+          <!-- Seconde row with the soufle sequence -->
 
-      <div class="row" >
-        <div class="btn-group-vertical"  >
-          <a class="btn btn-large btn-primary" href="views/niveau0.html" style="margin-top:50px;font-size:3.8em;"> NIVEAU 0 </a>
-          <a class="btn btn-large btn-primary" href="views/niveau1.html" style="margin-top:20px;font-size:3.8em;"> NIVEAU 1 </a>
-          <a class="btn btn-large btn-primary" href="#" style="margin-top:20px;font-size:3.8em;"> NIVEAU 2 </a>
-          <a class="btn btn-large btn-primary" href="#" style="margin-top:20px;font-size:3.8em;"> NIVEAU 3 </a>
-        </div>
-      </div>
-
-    </div> <!-- div container -->
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+          <div class="row" id="sequence2">
+            <div class="col-md-4"  >
+                <img src="../images/rain3.png" id="image" align="right" >
+            </div>
+            <div class="col-md-4" >
+                <img src="../images/rain1.png" id="image" align="middle" style="display:none;">
+            </div>
+            <div class="col-md-4">
+                <img src="../images/rain2.png" id="image" align="left">
+            </div>
+          </div>
+        </div> <!-- div container -->
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
@@ -68,6 +79,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -75,14 +87,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
-        <script>
-            function fermerPopup()
-            {
-              window.open('/', '_self', '');
-              window.close();
-
-            }
-        </script>
         <!-- endbuild -->
 </body>
 </html>
+
