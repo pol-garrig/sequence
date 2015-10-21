@@ -95,7 +95,7 @@ body {
   min-height: 300px;
 }
 
-#image {
+.image {
     box-shadow:0 0 7px 2px black;
     min-height: 230px;
     min-width: 210px;
